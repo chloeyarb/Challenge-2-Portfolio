@@ -3,7 +3,10 @@
     --secondary-color: #674569;
     --tertiary-color: #d9d9d9;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+}    
 /* body {
     color: var(--primary-color);
 } */
@@ -30,6 +33,7 @@ header h1 {
 }
 header a {
     text-decoration: none;
+    font-family: system-ui;
     color: var(--tertiary-color);
 }
 header nav {
@@ -58,46 +62,68 @@ header nav ul li a {
 }
 /*INTRO STYLE*/
 
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-position: center;
+    align-items: flex-start;
+    font-family: system-ui;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    /* border-bottom: .25px solid;
+    border-color: var(--tertiary-color); */
+}
+
 .intro-text {
     background-position: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-    border-bottom: 1px solid;
 }
 .intro-text h2{
     text-align: center;
-    margin: 3.5%;
+    margin: 2.5%;
     font-size: 40px;
     line-height: .75;
-    color: var(--tertiary-color);
     font-weight: bold;
 }
-/* .intro h2 p {
-    color: var(--tertiary-color);
-    font-size: 20px;
-}  */
 
 /*SECTION STYLES*/
 .section-title {
     display: flex;
     font-size: 35px;
-    padding-bottom: 20px;
+    font-family: system-ui;
     text-align: left;
-    color: var(--primary-color);
+    margin: auto;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 .primary-border {
     border-left: 3px solid;
-    border-left-color: var(--secondary-color);
+    border-left-color: var(--tertiary-color);
     margin-right: 20px;
 }   
+.about-section {
+    background-color: var(--primary-color);
+}
+.about-section p {
+    color: var(--tertiary-color);
+    margin: auto;
+}
 
+/*Contact Section*/
+.contact {
+    background-color: var(--primary-color);
 
-
-
+}
+address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    word-spacing: 10px;
+}
 
 /* style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
  padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
