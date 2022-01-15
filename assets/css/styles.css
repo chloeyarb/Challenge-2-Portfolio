@@ -1,6 +1,6 @@
 :root {
     --primary-color: black;
-    --secondary-color: #674569;
+    --secondary-color: #ff6c6a;
     --tertiary-color: #d9d9d9;
 }
 * {
@@ -81,7 +81,7 @@ header nav ul li a {
     flex-wrap: wrap;
     align-items: flex-start;
     font-size: 20px;
-    color: #FF6C6A;
+    color: var(--secondary-color);
     
 }
 .intro-text h2{
@@ -91,6 +91,12 @@ header nav ul li a {
     line-height: .75;
     font-weight: bold;
     color: var(--tertiary-color);
+}
+.avatar {
+    /* justify-content: center;
+    align-items: center;
+    flex: 0 0 15; */
+    width: 10%;
 }
 
 /*SECTION STYLES*/
@@ -123,14 +129,22 @@ header nav ul li a {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    align-items:flex-end;
     justify-content: space-around;
 }
 .portfolio {
     margin: 20px;
     flex: 1 0 0;
+    color: var(--tertiary-color);
 }
 .portfolio img {
-    width: 50%;
+    width: 60%;
+    border: 1.5px solid #FF6C6A;
+}
+.properties {
+    color: var(--secondary-color);
+    font-size: 10px;
+
 }
 
 /*CONTACT SECTION*/
